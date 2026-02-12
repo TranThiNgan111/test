@@ -37,7 +37,7 @@ class BasePage:
     def _select_menu(self, text:str):
         Locator= "//li/a//span[normalize-space()={text}]"
         self._click(Locator)
-da
+
     def _take_screenshot(self, filename: str):
         """Lưu ảnh chụp màn hình (sử dụng khi test fail)."""
         path = f"screenshots/{filename}"
